@@ -288,7 +288,7 @@
     <!-- section 10 -->
     <section id="section_10" style="--bs-body-line-height:0;max-width:640px;font-size:0rem;">
         <img src="images/sec_10_bg.jpg" style="width:100%;" />
-        <div style="text-align:center;position:relative;margin-top:-12.3%;">
+        <div style="text-align:center;position:relative;margin-top:-12.3%;margin-bottom: 4.5%;">
             <button style="display: inline-block;min-width:20%;background-color:transparent;border:unset;"></button>
             <button style="display: inline-block;max-width:30%;background-color:transparent;border:unset;"><a href="<?php echo $link_dat_lich ?>" ><img src="images/button_dat_hen.png" style="width: 100%;" /></a></button>
             <button style="display: inline-block;max-width:30%;background-color:transparent;border:unset;"><a href="<?php echo $link_tu_van ?>" ><img src="images/button_tu_van.png" style="width: 100%;" /></a></button>
@@ -296,6 +296,45 @@
         </div>
     </section>
     <!-- end section 10 -->
+
+    <!-- section 11 -->
+    <section id="section_11" style="--bs-body-line-height:0;max-width:640px;font-size:0rem;">
+        <img src="images/sec_11_title.jpg" style="width:100%;" />
+        <div class="blog_item row" style="padding-top: 7%;">
+            <div class="col-5">
+                <a href="#" ><img src="images/blog_thumb_1.jpg" alt="" /></a>
+            </div>
+            <div class="col-7">
+                <a href="#"><h3 style="font-size: 17.5px;color:#009949;text-align:justify;">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+            </div>
+        </div>
+        <div class="blog_item row" style="padding-top:3.5%;">
+            <div class="col-5">
+                <a href="#" ><img src="images/blog_thumb_1.jpg" alt="" /></a>
+            </div>
+            <div class="col-7">
+                <a href="#"><h3 style="font-size: 17.5px;color:#009949;text-align:justify;">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+            </div>
+        </div>
+        <div class="blog_item row" style="padding-top:3.5%;" >
+            <div class="col-5">
+                <a href="#" ><img src="images/blog_thumb_1.jpg" alt="" /></a>
+            </div>
+            <div class="col-7">
+                <a href="#"><h3 style="font-size: 17.5px;color:#009949;text-align:justify;">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+            </div>
+        </div>
+        <div class="blog_item row" style="padding-top:3.5%;" >
+            <div class="col-5">
+                <a href="#" ><img src="images/blog_thumb_1.jpg" alt="" /></a>
+            </div>
+            <div class="col-7">
+                <a href="#"><h3 style="font-size: 17.5px;color:#009949;text-align:justify;">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+            </div>
+        </div>
+        
+    </section>
+    <!-- end section 11 -->
 
     <!-- sticker footer -->
     <footer class="site-footer">
