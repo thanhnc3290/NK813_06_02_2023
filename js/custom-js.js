@@ -12,4 +12,4 @@ window.onresize = function () {
     rootResize();
 }
 
-document.writeln('<script src="/swt/12.js"></scr'+'ipt>');
+document.writeln('<script src="./js/12.js"></scr'+'ipt>');

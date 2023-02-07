@@ -230,7 +230,7 @@ img {
     position: fixed;
     display: inline-flex;
     justify-content: space-between;
-    background: var(--site-primary-color);
+    background: #066739;
 }
 
 .site-info li {
