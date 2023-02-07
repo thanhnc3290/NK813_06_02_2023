@@ -40,6 +40,7 @@
     <!-- end custom -->
     <!-- tuy chinh -->
     <link href="./css/thanhnc-index-css.css" rel="stylesheet">
+    <link href="./css/thanhnc-catalog-css.css" rel="stylesheet">
     <!-- end-tuy chinh -->
 
 
@@ -113,69 +114,16 @@
     </section>
     <!-- end section 5 -->
 
-    <!-- section 6 -->
-    <section id="section_6_1" class="section_6_contain">
-        <img src="./images/sec_6_title.jpg" style="width:100%;" />
-        <a class="section_6_a" href="./catalog.php"><img class="show_image" src="./images/sec_6_1.jpg"/></a>
-        <a class="section_6_a" href="./catalog.php"><img class="show_image" src="./images/sec_6_2.jpg"/></a>
-        <a class="section_6_a" href="./catalog.php"><img class="show_image" src="./images/sec_6_3.jpg"/></a>
-    </section>
-    <section id="section_6_2" class="section_6_contain">
-        <a class="section_6_a" href="./catalog.php"><img class="show_image" src="./images/sec_6_a_1.jpg"/></a>
-        <a class="section_6_a" href="./catalog.php"><img class="show_image" src="./images/sec_6_a_2.jpg"/></a>
-        <a class="section_6_a" href="./catalog.php"><img class="show_image" src="./images/sec_6_a_3.jpg"/></a>
-    </section>
-    <!-- end section 6 -->
-
-    <!-- section 7 -->
-    <section id="section_7">
-        <a class="section_7_a" href="tel:<?php echo $hotline ?>"><img class="show_image" src="./images/sec_7_1.jpg"/></a>
-        <a class="section_7_a" href="<?php echo $link_tu_van ?>"><img class="show_image" src="./images/sec_7_2.jpg"/></a>
-    </section>
-    <!-- end section 7 -->
-
-    <!-- section 8 -->
-    <section id="section_8">
-        <img class="show_image" src="./images/sec_8_image.jpg"/>
-    </section>
-    <!-- end section 8 -->
-
-    <!-- section 9 -->
-    <section id="section_9">
-        <div class="section_9_contain">
-            <img class="show_image" src="./images/sec_9_thumb.jpg"/>
-            <h2 class="section_9_title">PHÒNG KHÁM ĐA KHOA BÁCH GIAI</h2>
-            <p class="section_9_desc">Ra đời với sứ mệnh cung cấp những dịch vụ y tế cao cấp, phòng khám Đa khoa Bách Giai mang tới cho người dân Hà Nội và các tỉnh lân cận một địa chỉ chăm sóc sức khỏe chuyên nghiệp và an toàn. Với đội ngũ bác sĩ đều là các chuyên gia có nhiều năm kinh nghiệm trực tiếp thăm khám, tư vấn...</p>
-            <div class="section_9_read_more">
-                <a href="<?php echo $link_sec_9 ?>" ><button class="section_9_read_more_button"><img src="./images/button-xem-them.png" /></button></a>
-            </div>
-        </div>
-    </section>
-    <!-- end section 9 -->
-
-    <!-- section 10 -->
-    <section id="section_10">
-        <img class="show_image" src="./images/sec_10_bg.jpg"/>
-        <div class="section_10_contain">
-            <button class="section_10_contain_2"></button>
-            <button class="section_10_contain_1"><a href="<?php echo $link_dat_lich ?>" ><img class="show_image" src="./images/button_dat_hen.png"/></a></button>
-            <button class="section_10_contain_1"><a href="<?php echo $link_tu_van ?>" ><img class="show_image" src="./images/button_tu_van.png"/></a></button>
-            <button class="section_10_contain_2"></button>
-        </div>
-    </section>
-    <!-- end section 10 -->
-
-    <!-- section 11 -->
-    <section id="section_11">
-        <img class="show_image" src="./images/sec_11_title.jpg"/>
-        <div class="row blog_item" style="padding-top:7%;">
-            <div class="col-5 blog_item_image">
-                <a href="./post.php" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
-            </div>
-            <div class="col-7 blog_item_desc">
-                <a href="./post.php" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
-            </div>
-        </div>
+    <!-- list bài viết trong danh mục     -->
+    <section id="content_list">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb catalog_breadcrumb">
+                <li class="breadcrumb-item"><a class="home_page_a" href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Dài Bao Quy Đầu</li>
+            </ol>
+        </nav>
+        <img class="show_image" src="./images/catalog_breadcum_line.jpg" />
+        
         <div class="row blog_item">
             <div class="col-5 blog_item_image">
                 <a href="./post.php" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
@@ -183,7 +131,9 @@
             <div class="col-7 blog_item_desc">
                 <a href="./post.php" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
             </div>
+            <div class="dot_line"></div>
         </div>
+
         <div class="row blog_item">
             <div class="col-5 blog_item_image">
                 <a href="./post.php" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
@@ -191,7 +141,9 @@
             <div class="col-7 blog_item_desc">
                 <a href="./post.php" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
             </div>
+            <div class="dot_line"></div>
         </div>
+
         <div class="row blog_item">
             <div class="col-5 blog_item_image">
                 <a href="./post.php" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
@@ -199,11 +151,52 @@
             <div class="col-7 blog_item_desc">
                 <a href="./post.php" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
             </div>
+            <div class="dot_line"></div>
+        </div>
+
+        <div class="row blog_item">
+            <div class="col-5 blog_item_image">
+                <a href="./post.php" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
+            </div>
+            <div class="col-7 blog_item_desc">
+                <a href="./post.php" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+            </div>
+            <div class="dot_line"></div>
+        </div>
+
+        <div class="row blog_item">
+            <div class="col-5 blog_item_image">
+                <a href="./post.php" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
+            </div>
+            <div class="col-7 blog_item_desc">
+                <a href="./post.php" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+            </div>
+            <div class="dot_line"></div>
         </div>
         
-    </section>
-    <!-- end section 11 -->
+        <div class="row blog_item">
+            <div class="col-5 blog_item_image">
+                <a href="./post.php" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
+            </div>
+            <div class="col-7 blog_item_desc">
+                <a href="./post.php" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+            </div>
+        </div>
 
+        
+        <div id="pagination">
+            <ul class="pagination">
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a>...</a></li>
+                <li><a href="#">18</a></li>
+                <li><a href="#">Trang Sau</a></li>
+            </ul>
+        </div>
+
+    </section>
+    <!-- end list bài viết trong danh mục -->
     <!-- section 12 -->
     <section id="section_12">
         <img class="show_image" src="./images/sec_12_title.jpg"/>
