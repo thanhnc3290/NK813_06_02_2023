@@ -1,7 +1,7 @@
 <?php 
     //site info
     $base_url               = '';
-    $site_title             = 'Phòng Khám Đa Khoa Đông Phương';
+    $site_title             = 'Dài Bao Quy Đầu';
     $meta_key               = '';
     $meta_desc              = '';
     $social_image_link      = '';
