@@ -41,110 +41,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- end bootstrap -->
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- end font awesome -->
+
     <!-- custom -->
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom-css.css" rel="stylesheet">
     <!-- end custom -->
-
-    <!-- slider -->
-    <style>
-        .mySlides {display: none}
-        #section_3 > div > div > img {vertical-align: middle;}
-        .slideshow-container {
-            max-width: 100%;
-            position: relative;
-            margin: auto;
-        }
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-        .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.0);
-        }
-
-        .text {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-        }
-        
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        active, .dot:hover {
-            background-color: #717171;
-        }
-
-        .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-
-        @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-        }
-
-        
-        .prev, .next,.text {font-size: 11px}
-
-    </style>
-    <!-- end slider -->
-
     <!-- tuy chinh -->
-    <link href="css/thanhnc-css.css" rel="stylesheet">
+    <link href="css/thanhnc-index-css.css" rel="stylesheet">
     <!-- end-tuy chinh -->
 
 
 </head>
 
-<body style="padding-top:0;max-width:640px !important;">
+<body style="padding:0;max-width:640px !important;">
     <!-- header -->
-    <nav id="navbar-example1" class="navbar bg-light main-navigation" style="
-        --bs-navbar-padding-y:0;
-        --bs-navbar-toggler-padding-y:0.5rem;
-        --bs-navbar-brand-margin-end:0;
-        --bs-navbar-brand-font-size:0.5rem;
-        --bs-navbar-toggler-padding-x:unset;
-        --bs-navbar-toggler-font-size:unset;
-        ">
-        <div class="container" style="--bs-gutter-x:0;background-color:#009949;">
+    <nav id="home_menu" class="navbar bg-light main-navigation home_menu">
+        <div class="container home_menu_contain">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFirst" aria-controls="navbarFirst" aria-expanded="false" aria-label="Toggle navigation" style="width: 15%;">
                 <img alt="toggle button" class="img-navbar" src="images/img_navbar.png">
             </button>
@@ -165,204 +82,239 @@
     <!-- end header -->
 
     <!-- section 1 -->
-    <section id="section_1" style="margin-top: 15px;margin-bottom:15px;">
+    <section id="section_1">
         <div class="row">
-            <div style="display:inline-block;width:52%" ><a href="<?php echo $base_url; ?>" ><img src="images/logo-header.jpg"/></a></div>
-            <div style="display:inline-block;width:48%" ><a href="tel:<?php echo $hotline; ?>"><img src="images/hotline-header.jpg"/></a></div>
+            <div style="display:inline-block;width:52%" ><a href="<?php echo $base_url; ?>" ><img class="show_image" src="images/logo-header.jpg"/></a></div>
+            <div style="display:inline-block;width:48%" ><a href="tel:<?php echo $hotline; ?>"><img class="show_image" src="images/hotline-header.jpg"/></a></div>
         </div>
     </section>
     <!-- end section 1 -->
 
     <!-- section 2 -->
-    <section id="section_2" style="--bs-body-line-height:0;max-width:640px;font-size:0rem;text-align:center;">
-        <a href="#section_1" style="display: inline-block;max-width: 21.7%;"><img src="images/menu_home.jpg" style="width:100%;" /></a>
-        <a href="#" style="display: inline-block;max-width: 21.3%;"><img src="images/menu_gioi_thieu.jpg" style="width:100%;" /></a>
-        <a href="#" style="display: inline-block;max-width: 27%;"><img src="images/menu_chuyen_khoa.jpg" style="width:100%;" /></a>
-        <a href="#" style="display: inline-block;max-width: 29.6%;"><img src="images/menu_dang_ky_kham.jpg" style="width:100%;" /></a>
+    <section id="section_2">
+        <a class="section_2_a" href="#section_1" style="max-width: 21.7%;"><img class="show_image" src="images/menu_home.jpg"/></a>
+        <a class="section_2_a" href="#"          style="max-width: 21.3%;"><img class="show_image" src="images/menu_gioi_thieu.jpg"/></a>
+        <a class="section_2_a" href="#"          style="max-width: 27%;"><img class="show_image" src="images/menu_chuyen_khoa.jpg"/></a>
+        <a class="section_2_a" href="#"          style="max-width: 29.6%;"><img class="show_image" src="images/menu_dang_ky_kham.jpg"/></a>
     </section>
     <!-- end section 2 -->
 
     <!-- section 3 -->
-    <section id="section_3" style="margin-top: 0;margin-bottom:0;">
+    <section id="section_3">
         <div class="slideshow-container">
-            <div class="mySlides"><img src="images/banner-1.jpg" style="width:100%"></div>
-            <div class="mySlides"><img src="images/banner-2.jpg" style="width:100%"></div>
+            <div class="mySlides"><img class="show_image" src="images/banner-1.jpg"></div>
+            <div class="mySlides"><img class="show_image" src="images/banner-2.jpg"></div>
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
-
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "block";  
-                dots[slideIndex-1].className += " active";
-            }
-        </script>
     </section>
     <!-- end section 3 -->
 
     <!-- section 4 -->
-    <section id="section_4" style="--bs-body-line-height:0;max-width:640px;font-size:0rem;">
-        <a href="#" style="display: inline-block;max-width:33%;"><img src="images/sec_4_1.jpg" style="width:100%;" /></a>
-        <a href="#" style="display: inline-block;max-width:33%;"><img src="images/sec_4_2.jpg" style="width:100%;" /></a>
-        <a href="tel:<?php echo $hotline ?>" style="display: inline-block;max-width:33%;"><img src="images/sec_4_3.jpg" style="width:100%;" /></a>
+    <section id="section_4" style="">
+        <a class="section_4_a" href="#"><img class="show_image" src="images/sec_4_1.jpg"/></a>
+        <a class="section_4_a" href="#"><img class="show_image" src="images/sec_4_2.jpg"/></a>
+        <a class="section_4_a" href="tel:<?php echo $hotline ?>"><img class="show_image" src="images/sec_4_3.jpg"/></a>
     </section>
     <!-- end section 4 -->
 
     <!-- section 5 -->
-    <section id="section_5" style="--bs-body-line-height:0;max-width:640px;font-size:0rem;">
-        <a href="<?php echo $link_tu_van ?>" style="display: inline-block;max-width:33%;"><img src="images/sec_5_1.jpg" style="width:100%;" /></a>
-        <a href="#" style="display: inline-block;max-width:33%;"><img src="images/sec_5_2.jpg" style="width:100%;" /></a>
-        <a href="<?php echo $link_dat_lich ?>" style="display: inline-block;max-width:33%;"><img src="images/sec_5_3.jpg" style="width:100%;" /></a>
+    <section id="section_5">
+        <a class="section_5_a" href="<?php echo $link_tu_van ?>"><img class="show_image" src="images/sec_5_1.jpg"/></a>
+        <a class="section_5_a" href="#"><img class="show_image" src="images/sec_5_2.jpg"/></a>
+        <a class="section_5_a" href="<?php echo $link_dat_lich ?>"><img class="show_image" src="images/sec_5_3.jpg"/></a>
     </section>
     <!-- end section 5 -->
 
     <!-- section 6 -->
-    <section id="section_6" style="--bs-body-line-height:0;max-width:640px;font-size:0rem;text-align:center;">
+    <section id="section_6_1" class="section_6_contain">
         <img src="images/sec_6_title.jpg" style="width:100%;" />
-        <a href="#" style="display: inline-block;max-width: 33%;"><img src="images/sec_6_1.jpg" style="width:100%;" /></a>
-        <a href="#" style="display: inline-block;max-width: 33%;"><img src="images/sec_6_2.jpg" style="width:100%;" /></a>
-        <a href="#" style="display: inline-block;max-width: 33%;"><img src="images/sec_6_3.jpg" style="width:100%;" /></a>
+        <a class="section_6_a" href="#"><img class="show_image" src="images/sec_6_1.jpg"/></a>
+        <a class="section_6_a" href="#"><img class="show_image" src="images/sec_6_2.jpg"/></a>
+        <a class="section_6_a" href="#"><img class="show_image" src="images/sec_6_3.jpg"/></a>
     </section>
-    <section id="section_6_a" style="--bs-body-line-height:0;max-width:640px;font-size:0rem;text-align:center;">
-        <a href="#" style="display: inline-block;max-width: 33%;"><img src="images/sec_6_a_1.jpg" style="width:100%;" /></a>
-        <a href="#" style="display: inline-block;max-width: 33%;"><img src="images/sec_6_a_2.jpg" style="width:100%;" /></a>
-        <a href="#" style="display: inline-block;max-width: 33%;"><img src="images/sec_6_a_3.jpg" style="width:100%;" /></a>
+    <section id="section_6_2" class="section_6_contain">
+        <a class="section_6_a" href="#"><img class="show_image" src="images/sec_6_a_1.jpg"/></a>
+        <a class="section_6_a" href="#"><img class="show_image" src="images/sec_6_a_2.jpg"/></a>
+        <a class="section_6_a" href="#"><img class="show_image" src="images/sec_6_a_3.jpg"/></a>
     </section>
     <!-- end section 6 -->
 
     <!-- section 7 -->
-    <section id="section_7" style="--bs-body-line-height:0;max-width:640px;font-size:0rem;">
-        <a href="tel:<?php echo $hotline ?>" style="display: inline-block;max-width:50%;"><img src="images/sec_7_1.jpg" style="width:100%;" /></a>
-        <a href="<?php echo $link_tu_van ?>" style="display: inline-block;max-width:50%;"><img src="images/sec_7_2.jpg" style="width:100%;" /></a>
+    <section id="section_7">
+        <a class="section_7_a" href="tel:<?php echo $hotline ?>"><img class="show_image" src="images/sec_7_1.jpg"/></a>
+        <a class="section_7_a" href="<?php echo $link_tu_van ?>"><img class="show_image" src="images/sec_7_2.jpg"/></a>
     </section>
     <!-- end section 7 -->
 
     <!-- section 8 -->
-    <section id="section_8" style="--bs-body-line-height:0;max-width:640px;font-size:0rem;">
-        <img src="images/sec_8_image.jpg" style="width:100%;" />
+    <section id="section_8">
+        <img class="show_image" src="images/sec_8_image.jpg"/>
     </section>
     <!-- end section 8 -->
 
     <!-- section 9 -->
-    <section id="section_9" style="
-        --bs-body-line-height:0;max-width:640px;
-        font-size:0rem;background-image:url(images/sec_9_bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height:450px;
-        background-position-x: center;
-    ">
-        <div style="margin-left:10%;margin-right: 10%;padding-top:14%;" >
-            <img src="images/sec_9_thumb.jpg" style="width:100%;" />
-            <h2 style="font-size: 17px;color:red;padding-top:6.5%;text-align:center;font-weight:bolder;text-align:center;">PHÒNG KHÁM ĐA KHOA BÁCH GIAI</h2>
-            <p style="font-family: Arial; font-size: 17px;text-align:justify;font-weight:500;">Ra đời với sứ mệnh cung cấp những dịch vụ y tế cao cấp, phòng khám Đa khoa Bách Giai mang tới cho người dân Hà Nội và các tỉnh lân cận một địa chỉ chăm sóc sức khỏe chuyên nghiệp và an toàn. Với đội ngũ bác sĩ đều là các chuyên gia có nhiều năm kinh nghiệm trực tiếp thăm khám, tư vấn...</p>
-            <div style="text-align: center;padding-top:5.5%;">
-                <a href="<?php echo $link_sec_9 ?>" ><button style="border: none;background-color: transparent;margin-bottom:10%;"><img src="images/button-xem-them.png" /></button></a>
+    <section id="section_9">
+        <div class="section_9_contain">
+            <img class="show_image" src="images/sec_9_thumb.jpg"/>
+            <h2 class="section_9_title">PHÒNG KHÁM ĐA KHOA BÁCH GIAI</h2>
+            <p class="section_9_desc">Ra đời với sứ mệnh cung cấp những dịch vụ y tế cao cấp, phòng khám Đa khoa Bách Giai mang tới cho người dân Hà Nội và các tỉnh lân cận một địa chỉ chăm sóc sức khỏe chuyên nghiệp và an toàn. Với đội ngũ bác sĩ đều là các chuyên gia có nhiều năm kinh nghiệm trực tiếp thăm khám, tư vấn...</p>
+            <div class="section_9_read_more">
+                <a href="<?php echo $link_sec_9 ?>" ><button class="section_9_read_more_button"><img src="images/button-xem-them.png" /></button></a>
             </div>
         </div>
     </section>
     <!-- end section 9 -->
 
     <!-- section 10 -->
-    <section id="section_10" style="--bs-body-line-height:0;max-width:640px;font-size:0rem;">
-        <img src="images/sec_10_bg.jpg" style="width:100%;" />
-        <div style="text-align:center;position:relative;margin-top:-12.3%;margin-bottom: 4.5%;">
-            <button style="display: inline-block;min-width:20%;background-color:transparent;border:unset;"></button>
-            <button style="display: inline-block;max-width:30%;background-color:transparent;border:unset;"><a href="<?php echo $link_dat_lich ?>" ><img src="images/button_dat_hen.png" style="width: 100%;" /></a></button>
-            <button style="display: inline-block;max-width:30%;background-color:transparent;border:unset;"><a href="<?php echo $link_tu_van ?>" ><img src="images/button_tu_van.png" style="width: 100%;" /></a></button>
-            <button style="display: inline-block;min-width:20%;background-color:transparent;border:unset;"></button>
+    <section id="section_10">
+        <img class="show_image" src="images/sec_10_bg.jpg"/>
+        <div class="section_10_contain">
+            <button class="section_10_contain_2"></button>
+            <button class="section_10_contain_1"><a href="<?php echo $link_dat_lich ?>" ><img class="show_image" src="images/button_dat_hen.png"/></a></button>
+            <button class="section_10_contain_1"><a href="<?php echo $link_tu_van ?>" ><img class="show_image" src="images/button_tu_van.png"/></a></button>
+            <button class="section_10_contain_2"></button>
         </div>
     </section>
     <!-- end section 10 -->
 
     <!-- section 11 -->
-    <section id="section_11" style="--bs-body-line-height:0;max-width:640px;font-size:0rem;">
-        <img src="images/sec_11_title.jpg" style="width:100%;" />
-        <div class="blog_item row" style="padding-top: 7%;">
+    <section id="section_11">
+        <img class="show_image" src="images/sec_11_title.jpg"/>
+        <div class="row blog_item" style="padding-top:7%;">
             <div class="col-5">
-                <a href="#" ><img src="images/blog_thumb_1.jpg" alt="" /></a>
+                <a href="#" title=""><img class="show_image" src="images/blog_thumb_1.jpg" alt="" /></a>
             </div>
             <div class="col-7">
-                <a href="#"><h3 style="font-size: 17.5px;color:#009949;text-align:justify;">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+                <a href="#" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
             </div>
         </div>
-        <div class="blog_item row" style="padding-top:3.5%;">
+        <div class="row blog_item">
             <div class="col-5">
-                <a href="#" ><img src="images/blog_thumb_1.jpg" alt="" /></a>
+                <a href="#" title=""><img class="show_image" src="images/blog_thumb_1.jpg" alt="" /></a>
             </div>
             <div class="col-7">
-                <a href="#"><h3 style="font-size: 17.5px;color:#009949;text-align:justify;">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+                <a href="#" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
             </div>
         </div>
-        <div class="blog_item row" style="padding-top:3.5%;" >
+        <div class="row blog_item">
             <div class="col-5">
-                <a href="#" ><img src="images/blog_thumb_1.jpg" alt="" /></a>
+                <a href="#" title=""><img class="show_image" src="images/blog_thumb_1.jpg" alt="" /></a>
             </div>
             <div class="col-7">
-                <a href="#"><h3 style="font-size: 17.5px;color:#009949;text-align:justify;">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+                <a href="#" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
             </div>
         </div>
-        <div class="blog_item row" style="padding-top:3.5%;" >
+        <div class="row blog_item">
             <div class="col-5">
-                <a href="#" ><img src="images/blog_thumb_1.jpg" alt="" /></a>
+                <a href="#" title=""><img class="show_image" src="images/blog_thumb_1.jpg" alt="" /></a>
             </div>
             <div class="col-7">
-                <a href="#"><h3 style="font-size: 17.5px;color:#009949;text-align:justify;">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+                <a href="#" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
             </div>
         </div>
         
     </section>
     <!-- end section 11 -->
 
+    <!-- section 12 -->
+    <section id="section_12">
+        <img class="show_image" src="images/sec_12_title.jpg"/>
+        <a class="section_12_a" href="#"><img class="show_image" src="images/sec_12_1.jpg"/></a>
+        <a class="section_12_a" href="#"><img class="show_image" src="images/sec_12_2.jpg"/></a>
+        <a class="section_12_a" href="#"><img class="show_image" src="images/sec_12_3.jpg"/></a>
+        <a class="section_12_a" href="#"><img class="show_image" src="images/sec_12_4.jpg"/></a>
+    </section>
+    <!-- end section 12 -->
+
+    <!-- section 13 -->
+    <section id="section_13">
+        <div class="form_dang_ky">
+            <form id="myform" method="post" action="#123">
+                <p class="form_line"><input id="myform_name" class="input_form" placeholder="* Họ Tên:" type="text" name="input_name" required/></p>
+                <p class="form_line">
+                    <input id="myform_phone" class="input_form" placeholder="* Số Điện Thoại:" type="text" name="input_phone" required/>
+                    <div id="phone_error" class="error hidden">Số điện thoại không chính xác</div>
+                </p>
+                <p class="form_line"><textarea id="myform_status" class="input_form" placeholder="Triệu Chứng Bệnh:" type="text" name="input_status"></textarea></p>
+                <p class="form_submit"><button class="form_submit_button" type="submit"><img class="show_image" src="images/form_button.png" /></button></p>
+                <p class="form_line section_13_notice" style="margin-bottom:0;">Mọi Thông Tin Của Bạn Sẽ Được Chúng Tôi Bảo Mật 100%.</p>
+            </form>
+        </div>
+    </section>
+    <!-- end section 13 -->
+
+    <!-- section 14 -->
+    <section id="section_14">
+        <a class="section_14_a" style="max-width:34.55%;" href="#"><img class="show_image" src="images/sec_14_1.jpg"/></a>
+        <a class="section_14_a" style="max-width:30.9%;" href="#"><img class="show_image" src="images/sec_14_2.jpg"/></a>
+        <a class="section_14_a" style="max-width:34.55%;" href="#"><img class="show_image" src="images/sec_14_3.jpg"/></a>
+    </section>
+    <!-- end section 14 -->
+
+    <!-- section 15 -->
+    <section id="section_15">
+        <img class="show_image" src="images/sec_15_title.jpg"/>
+        <div class="section_15_thumb">
+            <img class="show_image" src="images/sec_15_thumb.png"/>
+        </div>
+        <h4 class="section_15_title">Nguyễn Văn Long</h4>
+        <h5 class="section_15_desc">Nhân Viên Văn Phòng</h5>
+        <div class="section_15_content">
+            <p>Mình bị rối loạn cương dương nên thường xuyên bị mặc cảm, tự ti khi quan hệ. 
+                Mình tự chữa bằng các mẹo dân gian nhưng không thể đỡ được. 
+                Tôi được bác hàng xóm giới thiệu cho Phòng khám đa khoa Bách Giai nên mình đến khám và điều trị đến lần 2 thì 
+                bệnh thuyên giảm rất nhiều.Các bác sĩ khám rất cẩn thận rồi mới chỉ định thuốc Đông Tây Y phù hợp với tình 
+                trạng bệnh nên mình cũng rất an tâm.</p>
+        </div>
+    </section>
+    <!-- end section 15 -->
+
+    <!-- section 16 -->
+    <section id="section_16">
+        <img class="show_image" src="images/sec_16_contain.jpg"/>
+    </section>
+    <!-- end section 16 -->
+
+    <!-- section 17 -->
+    <section id="section_17">
+        <img class="show_image" src="images/sec_17_logo.jpg"/>
+        <div class="section_17_contain">
+            <p><b><i class="fa-solid fa-square-phone"></i></b> Hotline: <span><?php echo $hotline; ?></span></p>
+            <p><b><i class="fa-regular fa-clock"></i></b> Khám bệnh từ: 8h - 20h tất cả các ngày trong tuần.</p>
+            <p><b><i class="fa-solid fa-location-dot"></i></b> Địa chỉ: 813 Giải Phóng - Giáp Bát - Hà Nội.</p>
+            <p><b><i class="fa-solid fa-shield-halved"></i></b> Trang web nhằm phục vụ mục đích tham khảo, không mang tính chất chẩn đoán bệnh và trị liệu</p>
+        </div>
+    </section>
+    <!-- end section 17 -->
+
     <!-- sticker footer -->
     <footer class="site-footer">
         <ul class="site-info">
             <li>
                 <a href="<?php echo $link_tu_van ?>">
-                    <img alt="Tư vấn" class="icon-footer" src="images/icon-footer-1.png" />
+                    <img alt="Tư vấn" class="icon-footer show_image" src="images/icon-footer-1.png" />
                     <p>Tư vấn</p>
                 </a>
             </li>
 
             <li>
                 <a target="_blank" href="<?php echo $link_google_map ?>">
-                    <img alt="Đường đi" class="icon-footer" src="images/icon-footer-2.png" />
+                    <img alt="Đường đi" class="icon-footer show_image" src="images/icon-footer-2.png" />
                     <p>Đường đi</p>
                 </a>
             </li>
 
             <li>
                 <a href="<?php echo $link_dat_lich ?>">
-                    <img alt="Đặt lịch" class="icon-footer" src="images/icon-footer-3.png" />
+                    <img alt="Đặt lịch" class="icon-footer show_image" src="images/icon-footer-3.png" />
                     <p>Đặt lịch</p>
                 </a>
             </li>
 
             <li>
                 <a href="tel:<?php echo $hotline; ?>">
-                    <img alt="Gọi ngay" class="icon-footer" src="images/icon-footer-4.png" />
+                    <img alt="Gọi ngay" class="icon-footer show_image" src="images/icon-footer-4.png" />
                     <p>Gọi ngay</p>
                 </a>
             </li>
@@ -372,6 +324,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom-js.js"></script>
     <script src="js/jquery.js"></script>
+    <script src="js/home_slider.js"></script>
     <script src="js/thanhnc.js"></script>
     <!-- <script src="js/dialogue.js"></script> -->
 
