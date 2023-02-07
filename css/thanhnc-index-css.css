@@ -49,6 +49,20 @@
     text-align:center;
 }
 
+.menu_text{
+    font-size: 18px ;
+    background-color: #036234;
+    min-height: 40px;
+    text-align: center;
+    border-right: solid 2px white;
+}
+
+.menu_text > span{
+    color:white;
+    font-family: Arial;
+    vertical-align: -webkit-baseline-middle;
+}
+
 .section_2_a{
     display: inline-block;
 }
@@ -432,6 +446,7 @@
 /* end slider */
 
 @media only screen and (max-width: 550px) {
+   
     #section_12{
         margin-top: 5%;
     }
@@ -461,6 +476,10 @@
 }
 
 @media only screen and (max-width: 450px) {
+    .menu_text{
+        font-size: 14px;
+        min-height: 30px;
+    }
     .section_17_contain{
         font-size: 13px;
     }
@@ -485,6 +504,11 @@
 }
 
 @media only screen and (max-width: 350px) {
+    .menu_text{
+        font-size: 12px;
+        min-height: 30px;
+    }
+
     .section_17_contain{
         font-size: 10px;
     }
