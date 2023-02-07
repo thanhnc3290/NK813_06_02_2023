@@ -79,10 +79,10 @@
 
     <!-- section 2 -->
     <section id="section_2">
-        <a class="section_2_a" href="#section_1" style="max-width: 21.7%;"><img class="show_image" src="./images/menu_home.jpg"/></a>
-        <a class="section_2_a" href="#"          style="max-width: 21.3%;"><img class="show_image" src="./images/menu_gioi_thieu.jpg"/></a>
-        <a class="section_2_a" href="#"          style="max-width: 27%;"><img class="show_image" src="./images/menu_chuyen_khoa.jpg"/></a>
-        <a class="section_2_a" href="#"          style="max-width: 29.6%;"><img class="show_image" src="./images/menu_dang_ky_kham.jpg"/></a>
+        <a class="section_2_a menu_text" href="#section_1" style="width: 21.7%;"><span>Trang Chủ</span></a>
+        <a class="section_2_a menu_text" href="#" style="width: 21.3%;"><span>Giới Thiệu</span></a>
+        <a class="section_2_a menu_text" href="#" style="width: 27%;"><span>Chuyên Khoa</span></a>
+        <a class="section_2_a menu_text" href="#" style="width: 29.6%;border-right:unset;"><span>Đăng Ký Khám</span></a>
     </section>
     <!-- end section 2 -->
 
