@@ -40,6 +40,7 @@
     <!-- end custom -->
     <!-- tuy chinh -->
     <link href="./css/thanhnc-index-css.css" rel="stylesheet">
+    <link href="./css/thanhnc-update.css" rel="stylesheet">
     <!-- end-tuy chinh -->
 
 
@@ -98,10 +99,12 @@
     <!-- end section 3 -->
 
     <!-- section 4 -->
-    <section id="section_4">
-        <a class="section_4_a" href="#"><img class="show_image" src="./images/sec_4_1.jpg"/></a>
-        <a class="section_4_a" href="#"><img class="show_image" src="./images/sec_4_2.jpg"/></a>
-        <a class="section_4_a" href="tel:<?php echo $hotline ?>"><img class="show_image" src="./images/sec_4_3.jpg"/></a>
+     <section id="section_4">
+        <div class="row">
+            <div class="col-4 section_4_button_1"><div>Đội Ngũ Bác Sĩ</div><div>Hàng Đầu Hà Nội</div></div>
+            <div class="col-4 section_4_button_2"><div>Giờ Khám</div><div>08:00 - 20:00</div></div>
+            <div class="col-4 section_4_button_3"><div>Hotline</div><div><?php echo $hotline ?></div></div>
+        </div>
     </section>
     <!-- end section 4 -->
 
@@ -136,7 +139,9 @@
 
     <!-- section 8 -->
     <section id="section_8">
-        <img class="show_image" src="./images/sec_8_image.jpg"/>
+        <img class="show_image" src="./images/sec_8_1.jpg"/>
+        <img class="show_image" src="./images/sec_8_2.jpg"/>
+        <img class="show_image" src="./images/sec_8_3.jpg"/>
     </section>
     <!-- end section 8 -->
 
@@ -155,7 +160,9 @@
 
     <!-- section 10 -->
     <section id="section_10">
-        <img class="show_image" src="./images/sec_10_bg.jpg"/>
+        <img class="show_image" src="./images/sec_10_1.jpg"/>
+        <img class="show_image" src="./images/sec_10_2.jpg"/>
+        <img class="show_image" src="./images/sec_10_3.jpg"/>
         <div class="section_10_contain">
             <button class="section_10_contain_2"></button>
             <button class="section_10_contain_1"><a href="<?php echo $link_dat_lich ?>" ><img class="show_image" src="./images/button_dat_hen.png"/></a></button>

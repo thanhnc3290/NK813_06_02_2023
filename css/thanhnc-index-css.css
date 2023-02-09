@@ -1,4 +1,7 @@
 /* css tuy chinh */
+.row_sec{
+    font-size: 1rem;
+}
 .navbar-nav .nav-link{
     padding-left: 1rem;
     color: white;
