@@ -31,15 +31,27 @@
     <!-- header -->
     <nav id="home_menu" class="navbar bg-light main-navigation home_menu">
         <div class="container home_menu_contain">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFirst" aria-controls="navbarFirst" aria-expanded="false" aria-label="Toggle navigation" style="width: 15%;">
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarFirst" 
+                aria-controls="navbarFirst" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation" 
+                style="width: 15%;">
                 <img alt="toggle button" class="img-navbar" src="./images/img_navbar.png">
             </button>
-            <a class="navbar-brand" href="#" style="background-color:#047f3e;text-align:center;">
-                <img alt="Phòng Khám Đa Khoa Đông Phương" class="img-logo" src="./images/header-image-2.png" style="width:95%;">
-            </a>
+            <div class="home_menu_button_2">
+                <form id="myform_2" class="form_menu" method="post" action="#form_2">
+                    <input id="myform_phone_2" type="text" class="nhap_so_dien_thoai" name="input_phone_2" placeholder="Nhập số điện thoại để được tư vấn.">
+                    <input type="submit" class="nhap_so_dien_thoai" value="Gửi" />
+                    <div id="phone_error_2" class="error hidden">*Số điện thoại không chính xác.</div>
+                </form>
+            </div>
             <div class="collapse navbar-collapse" id="navbarFirst">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Trang chủ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Giới Thiệu</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Chuyên Khoa</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Đăng Ký Khám</a></li>
@@ -53,18 +65,33 @@
     <!-- section 1 -->
     <section id="section_1">
         <div class="row">
-            <div style="display:inline-block;width:52%" ><a href="" ><img class="show_image" src="./images/logo-header.jpg"/></a></div>
-            <div style="display:inline-block;width:48%" ><a href="tel:0866.597.713"><img class="show_image" src="./images/hotline-header.jpg"/></a></div>
+            <div class="col-7 header_logo">
+                <a href="./index.html" alt="Phòng Khám Đa Khoa Đông Phương" >
+                    <img class="show_image" src="./images/logo-header.jpg"/>
+                </a>
+            </div>
+            <div class="col-5 header_hotline">
+                <div class="hotline_button">
+                    <div class="hotline_number">
+                        <a class="white_text" href="tel:0866.597.713">
+                            <span class="hotline_number_text">Hotline:</span><br/>
+                            <span class="hotline_number_phone">0866.597.713</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- end section 1 -->
 
     <!-- section 2 -->
     <section id="section_2">
-        <a class="section_2_a menu_text" href="#section_1" style="width: 21.7%;"><span>Trang Chủ</span></a>
-        <a class="section_2_a menu_text" href="#" style="width: 21.3%;"><span>Giới Thiệu</span></a>
-        <a class="section_2_a menu_text" href="#" style="width: 27%;"><span>Chuyên Khoa</span></a>
-        <a class="section_2_a menu_text" href="#" style="width: 29.6%;border-right:unset;"><span>Đăng Ký Khám</span></a>
+        <div class="row">
+            <div class="col-3 section_2_button"><a class="white_text" href="#">Trang Chủ</a></div>
+            <div class="col-3 section_2_button"><a class="white_text" href="#">Giới Thiệu</a></div>
+            <div class="col-3 section_2_button"><a class="white_text" href="#">Chuyên Khoa</a></div>
+            <div class="col-3 section_2_button_end"><a class="white_text" href="#">Đăng Ký Khám</a></div>
+        </div>
     </section>
     <!-- end section 2 -->
 
@@ -161,37 +188,37 @@
 
     <!-- section 11 -->
     <section id="section_11">
-        <img class="show_image" src="./images/sec_11_title.jpg"/>
-        <div class="row blog_item" style="padding-top:7%;">
+        <h2 class="h2_title">Kiến Thức Nam Khoa</h2>
+        <div class="row blog_item">
             <div class="col-5 blog_item_image">
-                <a href="./post.php" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
+                <a href="./post.html" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
             </div>
             <div class="col-7 blog_item_desc">
-                <a href="./post.php" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+                <a href="./post.html" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
             </div>
         </div>
         <div class="row blog_item">
             <div class="col-5 blog_item_image">
-                <a href="./post.php" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
+                <a href="./post.html" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
             </div>
             <div class="col-7 blog_item_desc">
-                <a href="./post.php" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+                <a href="./post.html" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
             </div>
         </div>
         <div class="row blog_item">
             <div class="col-5 blog_item_image">
-                <a href="./post.php" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
+                <a href="./post.html" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
             </div>
             <div class="col-7 blog_item_desc">
-                <a href="./post.php" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+                <a href="./post.html" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
             </div>
         </div>
         <div class="row blog_item">
             <div class="col-5 blog_item_image">
-                <a href="./post.php" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
+                <a href="./post.html" title=""><img class="show_image" src="./images/blog_thumb_1.jpg" alt="" /></a>
             </div>
             <div class="col-7 blog_item_desc">
-                <a href="./post.php" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
+                <a href="./post.html" title=""><h3 class="blog_title">Ngứa Bao Quy Đầu cảnh báo bệnh gì? Bác sĩ chuyên khoa giải đáp thắc mắc </h3></a>
             </div>
         </div>
         
@@ -200,25 +227,28 @@
 
     <!-- section 12 -->
     <section id="section_12">
-        <img class="show_image" src="./images/sec_12_title.jpg"/>
-        <a class="section_12_a" href="./catalog.php"><img class="show_image" src="./images/sec_12_1.jpg"/></a>
-        <a class="section_12_a" href="./catalog.php"><img class="show_image" src="./images/sec_12_2.jpg"/></a>
-        <a class="section_12_a" href="./catalog.php"><img class="show_image" src="./images/sec_12_3.jpg"/></a>
-        <a class="section_12_a" href="./catalog.php"><img class="show_image" src="./images/sec_12_4.jpg"/></a>
+        <h2 class="h2_title">Bài Viết Chuyên Khoa Khác</h2>
+        <div class="row">
+            <div class="col-3 section_12_button"><div class="section_12_thumb"><div class="section_12_image_1"></div></div><div class="section_12_title"><a class="black_text" href="./catalog.html" title="">Nam Khoa</a></div></div>
+            <div class="col-3 section_12_button"><div class="section_12_thumb"><div class="section_12_image_2"></div></div><div class="section_12_title"><a class="black_text" href="./catalog.html" title="">Phụ Khoa</a></div></div>
+            <div class="col-3 section_12_button"><div class="section_12_thumb"><div class="section_12_image_3"></div></div><div class="section_12_title"><a class="black_text" href="./catalog.html" title="">Da Liễu</a></div></div>
+            <div class="col-3 section_12_button"><div class="section_12_thumb"><div class="section_12_image_4"></div></div><div class="section_12_title"><a class="black_text" href="./catalog.html" title="">Bệnh Xã Hội</a></div></div>
+        </div>
     </section>
     <!-- end section 12 -->
 
     <!-- section 13 -->
     <section id="section_13">
+        <h2 class="h2_title" style="color:white;">Đăng Ký Thăm Khám</h2>
         <div class="form_dang_ky">
             <form id="myform" method="post" action="#123">
                 <p class="form_line"><input id="myform_name" class="input_form" placeholder="* Họ Tên:" type="text" name="input_name" required/></p>
                 <p class="form_line">
                     <input id="myform_phone" class="input_form" placeholder="* Số Điện Thoại:" type="text" name="input_phone" required/>
-                    <div id="phone_error" class="error hidden">Số điện thoại không chính xác</div>
+                    <div id="phone_error" class="error hidden">*Số điện thoại không chính xác.</div>
                 </p>
                 <p class="form_line"><textarea id="myform_status" class="input_form" placeholder="Triệu Chứng Bệnh:" type="text" name="input_status"></textarea></p>
-                <p class="form_submit"><button class="form_submit_button" type="submit"><img class="show_image" src="./images/form_button.png" /></button></p>
+                <p class="form_submit"><button class="form_submit_button" type="submit">Gửi Thông Tin</button></p>
                 <p class="form_line section_13_notice" style="margin-bottom:0;">Mọi Thông Tin Của Bạn Sẽ Được Chúng Tôi Bảo Mật 100%.</p>
             </form>
         </div>
@@ -227,15 +257,17 @@
 
     <!-- section 14 -->
     <section id="section_14">
-        <a class="section_14_a" style="max-width:34.55%;" href="#"><img class="show_image" src="./images/sec_14_1.jpg"/></a>
-        <a class="section_14_a" style="max-width:30.9%;" href="#"><img class="show_image" src="./images/sec_14_2.jpg"/></a>
-        <a class="section_14_a" style="max-width:34.55%;" href="#"><img class="show_image" src="./images/sec_14_3.jpg"/></a>
+        <div class="row">
+            <div class="col-4 section_14_button"><div class="section_14_thumb"><div class="section_14_image_1"></div><div class="section_14_caption">0866.597.813</div></div><div class="section_14_title">Hỗ trợ 24/7</div></div>
+            <div class="col-4 section_14_button"><div class="section_14_thumb"><div class="section_14_image_2"></div><div class="section_14_caption">8:00 - 20:00</div></div><div class="section_14_title">Thời Gian Khám</div></div>
+            <div class="col-4 section_14_button"><div class="section_14_thumb"><div class="section_14_image_3"></div><div class="section_14_caption">24/24</div></div><div class="section_14_title">Bác Sĩ Tư Vấn</div></div>
+        </div>
     </section>
     <!-- end section 14 -->
 
     <!-- section 15 -->
     <section id="section_15">
-        <img class="show_image" src="./images/sec_15_title.jpg"/>
+        <h2 class="h2_title">Tâm Sự Bệnh Nhân</h2>
         <div class="section_15_thumb">
             <img class="show_image" src="./images/sec_15_thumb.png"/>
         </div>
@@ -253,7 +285,10 @@
 
     <!-- section 16 -->
     <section id="section_16">
-        <img class="show_image" src="./images/sec_16_contain.jpg"/>
+        <h2 class="h2_title">Hình Ảnh Phòng Khám</h2>
+        <img class="show_image" src="./images/sec_16_contain_1.jpg"/>
+        <img class="show_image" src="./images/sec_16_contain_2.jpg"/>
+        <img class="show_image" src="./images/sec_16_contain_3.jpg"/>
     </section>
     <!-- end section 16 -->
 

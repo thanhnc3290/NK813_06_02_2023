@@ -357,7 +357,10 @@
 }
 
 .error{
-  color: red;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  font-family: Arial;
   size: 80%
 }
 
