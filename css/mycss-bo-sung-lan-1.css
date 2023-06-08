@@ -1,0 +1,181 @@
+.section_4_button_1{
+    background-color: #c12626!important;
+}
+.section_4_button_1_line_2 {
+    background-color: #c12626!important;
+}
+.section_4_button_2 {
+    background-color: #c12626!important;
+}
+.section_4_button_2_line_2{
+    background-color: #c12626!important;
+}
+.section_5_button_3 {
+    background-color: #c12626!important;
+}
+.section_5_button_3_line_2 {
+    background-color: #c12626!important;
+}
+.add_image_1{
+    background-image:url(../images/maintaince/add_image_1.jpg);
+}
+.add_image_2{
+    background-image:url(../images/maintaince/add_image_2.jpg);
+}
+.section_6_image_thumb_1,.section_6_image_thumb_2,.section_6_image_thumb_3,.section_6_image_thumb_4,.section_6_image_thumb_5,.section_6_image_thumb_6{
+    background-image: unset!important;
+}
+.section_6_image_bg_1{
+    background-image: url(../images/maintaince/benh_nam_khoa_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section_6_image_bg_2{
+    background-image: url(../images/maintaince/benh_nam_khoa_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section_6_image_bg_3{
+    background-image: url(../images/maintaince/benh_nam_khoa_3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section_6_image_bg_4{
+    background-image: url(../images/maintaince/benh_nam_khoa_4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section_6_image_bg_5{
+    background-image: url(../images/maintaince/benh_nam_khoa_5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section_6_image_bg_6{
+    background-image: url(../images/maintaince/benh_nam_khoa_6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#mot_so_trieu_chung_benh{
+    margin-top:2rem;
+}
+.mot_so_trieu_chung_benh_contain{
+    width: 15rem;
+    margin:auto;
+}
+.mot_so_trieu_chung_benh_contain_line{
+    display: inline-block;
+    width: 7.1rem;
+    color: white;
+    background-color: #066739;
+    border-radius: 0.25rem;
+    margin: 0.15rem;
+    line-height: 1rem;
+}
+.mot_so_trieu_chung_benh_contain_line_text{
+    padding-left: 0.75rem;
+}
+.mot_so_trieu_chung_benh_contain_line_text::before{
+    content: '';
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-image: url(../images/maintaince/mot_so_trieu_chung_benh_icon.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0.3rem;
+    margin-left: -0.55rem;
+}
+#google_map{margin-top:1rem;}
+.section_8_image_2{
+    background-image: url(../images/maintaince/ly_do_chon_phong_kham_2.png);
+}
+.section_8_image_3{
+    background-image: url(../images/maintaince/ly_do_chon_phong_kham_3.png);
+}
+.section_8_image_4{
+    background-image: url(../images/maintaince/ly_do_chon_phong_kham_4.png);
+}
+#form_dang_ky_1{
+    margin-top: 1rem;
+    width: 15rem;
+    margin: auto;
+    background-image: url(../images/maintaince/form_dang_ky_1_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 15rem ;
+}
+.form_dang_ky_1_contain{
+    padding-top: 1.85rem;
+}
+.form_dang_ky_1_class_textarea,.form_dang_ky_1_class_input{
+    width: 9rem;
+    margin-left: 3rem;
+    /* margin-bottom: 0.25rem; */
+    border-radius: 0.25rem;
+    border: solid transparent;
+    background: #fffafa4f;
+    color: white;
+    font-size: 0.4rem;
+}
+.form_dang_ky_1_class_textarea::-webkit-input-placeholder,.form_dang_ky_1_class_input::-webkit-input-placeholder{
+    color:white;
+    margin-left: 0.25rem;
+}
+.form_dang_ky_1_class_textarea{
+    margin-top: 0.15rem;
+}
+.form_dang_ky_1_class_submit{
+    background-color: #c12626;
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+    width: 5rem;
+    line-height: 1rem;
+    margin-left: 6.5rem;
+    border: solid transparent;
+    border-radius: 0.25rem;
+}
+.form_dang_ky_1_icon_fb{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    margin-top: -1.1rem;
+    margin-left: 3.5rem;
+    object-fit: contain;
+    object-position: center;
+}
+.form_dang_ky_1_icon_zalo{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    margin-top: -1.1rem;
+    margin-left: 4.75rem;
+    object-fit: contain;
+    object-position: center;
+}
+.form_dang_ky_1_call_1{
+    position: absolute;
+    margin-top: 4.125rem;
+    margin-left: 2.75rem;
+    width: 4rem;
+    height: 2.5rem;
+    object-fit: contain;
+    object-position: center;
+}
+.form_dang_ky_1_call_2{
+    position: absolute;
+    margin-top: 4.125rem;
+    margin-left: 8.15rem;
+    width: 4rem;
+    height: 2.5rem;
+    object-fit: contain;
+    object-position: center;
+}
